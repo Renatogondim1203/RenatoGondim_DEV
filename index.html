@@ -127,16 +127,16 @@
   <!-- Contato -->
   <section id="contato" class="contato">
     <h2>Fale comigo</h2>
-    <form action="https://formsubmit.co/corporativo.renatogondim@gmail.com" method="POST">
-      <!-- Ocultos -->
-      <input type="hidden" name="_next" value="https://renatogondim1203.github.io/RenatoGondim_DEV/obrigado.html">
-      <input type="hidden" name="_captcha" value="false">
-
-      <!-- Campos visíveis -->
+    <form id="formulario" action="https://formspree.io/f/mdkzlopa" method="POST">
       <input type="text" name="nome" placeholder="Seu nome" required />
       <input type="email" name="email" placeholder="Seu email" required />
       <textarea name="mensagem" placeholder="Digite sua mensagem" required></textarea>
       <button type="submit" class="btn btn-primary">Enviar</button>
+      <p id="status-msg" style="margin-top: 10px;"></p>
+      <p id="status-msg">
+        <span id="status-icon"></span>
+        <span id="status-text"></span>
+      </p>
     </form>
   </section>
 

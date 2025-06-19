@@ -416,6 +416,40 @@ footer {
 }
 
 
+
+#status-msg {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  max-width: 400px;
+  margin-inline: auto;
+}
+
+#status-msg.success {
+  background-color: #d1f5d3;
+  color: #1a7224;
+  border: 1px solid #59b16e;
+}
+
+#status-msg.error {
+  background-color: #f8d7da;
+  color: #842029;
+  border: 1px solid #f5c2c7;
+}
+
+/* Animação */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
 @media (max-width: 1024px) {
   .hero {
     grid-template-columns: 1fr;
